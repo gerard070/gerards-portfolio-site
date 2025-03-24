@@ -6483,7 +6483,7 @@ input, select, textarea {
 		}
 
 		.gallery.style1 article {
-			overflow: hidden;
+			overflow: visible;
 			position: relative;
 			width: 25%;
 		}
@@ -6868,7 +6868,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			display: block;
 			position: relative;
-			overflow: hidden;
+			overflow: visible;
 			width: 22.5rem;
 			max-width: 75vw;
 		}
