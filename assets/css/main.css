@@ -6868,7 +6868,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			display: block;
 			position: relative;
-			overflow: visible;
+			overflow: hidden;
 			width: 22.5rem;
 			max-width: 75vw;
 		}
