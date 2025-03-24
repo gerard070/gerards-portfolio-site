@@ -6483,7 +6483,7 @@ input, select, textarea {
 		}
 
 		.gallery.style1 article {
-			overflow: visible;
+			overflow: hidden;
 			position: relative;
 			width: 25%;
 		}
