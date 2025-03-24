@@ -8616,7 +8616,7 @@ input, select, textarea {
 /* Increase size for the two-images section */
 /* Custom styles for the two-images container to equalize image sizes */
 .two-images {
-	display: flex;
+	display: flex!important;
 	gap: 2rem;              /* Adjust gap as needed */
 	width: 100%;
 	max-width: 1200px;      /* Adjust max-width as needed */
