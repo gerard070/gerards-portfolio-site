@@ -8612,3 +8612,34 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+/* Two Images Container */
+/* Increase size for the two-images section */
+/* Custom styles for the two-images container to equalize image sizes */
+.two-images {
+	display: flex;
+	gap: 2rem;              /* Adjust gap as needed */
+	width: 100%;
+	max-width: 1200px;      /* Adjust max-width as needed */
+	margin: 2rem auto;      /* Center the container with vertical spacing */
+  }
+  
+  .two-images figure {
+	flex: 1 1 50%;          /* Each figure takes up equal width */
+	margin: 0;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column; /* Stack image and caption vertically */
+	align-items: center;    /* Center content horizontally */
+  }
+  
+  .two-images img {
+	width: 100%;
+	max-height: 300px;      /* Consistent max height for images */
+	object-fit: contain;    /* Ensures the full image is visible without cropping */
+  }
+  
+  .two-images figcaption {
+	font-size: 1rem;        /* Adjust caption font size as needed */
+	margin-top: 0.5rem;
+	text-align: center;
+  }
