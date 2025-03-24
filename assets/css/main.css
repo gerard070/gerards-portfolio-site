@@ -2632,6 +2632,7 @@ input, select, textarea {
 		border-radius: 4px;
 		display: inline-block;
 		position: relative;
+		overflow: visible;  /* Allow content to fully display */
 	}
 
 		.image img {
@@ -2639,16 +2640,19 @@ input, select, textarea {
 			border-radius: 4px;
 			width: 100%;
     			height: auto;
-    			object-fit: contain;
+    			object-fit: contain; /* Ensures the entire image is visible */
 		}
 
 		.image.left, .image.right {
 			width: 40%;
-			max-width: 10rem;
+			/* Removing max-width restriction to avoid forcing a small container */
+    			/* max-width: 10rem; */
 		}
 
 			.image.left img, .image.right img {
 				width: 100%;
+			        height: auto;
+    				object-fit: contain;
 			}
 
 		.image.left {
@@ -2671,6 +2675,8 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: auto;
+    				object-fit: contain;
 			}
 
 		.image.main {
@@ -2681,6 +2687,8 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
+				height: auto;
+    				object-fit: contain;
 			}
 
 /* List */
