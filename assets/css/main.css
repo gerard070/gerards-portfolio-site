@@ -4916,7 +4916,7 @@ input, select, textarea {
 				-ms-object-position: center;
 				object-position: center;
 				display: block;
-				position: absolute;
+				position: relative;
 				top: 0;
 				left: 0;
 				width: 100%;
@@ -5813,7 +5813,8 @@ input, select, textarea {
 		}
 
 	.spotlight .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		background-color: transparent;
+		/* background-color: rgba(0, 0, 0, 0.125); */
 	}
 
 	.spotlight.invert .image {
