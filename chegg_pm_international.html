@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>International Expansion and Growth</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="is-preload">
+  <div id="password-protect" class="wrapper style1 align-center">
+    <div class="inner">
+      <h1>International Expansion and Growth at Chegg</h1>
+      <p>This page is password protected. Please enter the password or contact me at gerardinterviews@gmail.com to continue. </p>
+      <form id="passwordForm">
+        <input type="password" id="passwordInput" placeholder="Enter password" required />
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="error-message" style="color: red; display: none;">Incorrect password. Please try again.</p>
+    </div>
+  </div>
+  
+  <!-- MOVE protected content OUTSIDE -->
+  <div id="protected-content" style="display: none;">
+    <section class="wrapper style2 align-center">
+      <div class="inner">
+        <h2>Chegg International Expansion Strategy</h2>
+        <p>Here’s an overview of how we scaled Chegg Study into international markets while balancing growth, operational complexity, and localized user needs:</p>
+        <div class="section-spacing">
+        <h3>Key Highlights:</h3>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+          <li>Prioritized market entry based on TAM, competitive dynamics, and LTV projections</li>
+          <li>Rolled out local currency presentment (LCP) and optimized regional pricing</li>
+          <li>Streamlined product localization with scalable tech architecture</li>
+          <li>Balanced regional customization with core platform consistency to maximize margin</li>
+        </ul>
+      </div>
+      <div class="section-spacing">
+        <h3>Results:</h3>
+        <p>⚡ Achieved double-digit growth in new international subscriber segments within the first year of rollout.</p>
+      </div>
+      <div class="section-spacing">
+        <h3>Deep Dive:</h3>
+        <p>At Chegg, the business provided an OKR centered around international conversion rate growth. Our goal was to demonstrate conversion growth in international markets while competing against ChatGPT.</p>
+        <p>Through a program of continuous discovery that I had instituted with my designer and eng lead, we already had a pretty good idea of the international opportunity space. Customer journey mapping showed we had significant drop-off on our pricing and packaging page for international users. Improving passthrough rate on this page would drive CVR overall.</p>
+      </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    document.getElementById("passwordForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const password = document.getElementById("passwordInput").value;
+      // if (password === "AccessGranted2025") {
+        if (password === "t") {
+        document.getElementById("password-protect").style.display = "none";
+        document.getElementById("protected-content").style.display = "block";
+      } else {
+        document.getElementById("error-message").style.display = "block";
+      }
+    });
+  </script>

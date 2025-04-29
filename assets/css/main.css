@@ -8679,3 +8679,86 @@ input, select, textarea {
   .section-spacing {
 	margin-bottom: 4rem;
   }
+/* Fixed Top Navigation Bar
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	z-index: 1000;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar .nav-left,
+  .navbar .nav-right {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+  }
+  
+  .navbar a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+	font-size: 1rem;
+	transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+	color: #47D3E5;
+  }
+  
+  /* Ensure page content doesn't hide behind nav */
+  /* body {
+	padding-top: 80px;
+  } */ 
+   /* Clean fixed navbar with right-aligned links */
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+	z-index: 1000;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar .nav-right {
+	display: flex;
+	gap: 2rem;
+  }
+  
+  .navbar .nav-right a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.2s ease;
+  }
+  
+  .navbar .nav-right a:hover {
+	color: #47D3E5;
+  }
+  
+  /* Prevent content overlap */
+  #wrapper {
+	padding-top: 80px;
+  }
+
+  .deep-dive {
+	margin-bottom: 5rem;
+  }
+  
+  .deep-dive .button {
+	margin-top: 1rem;
+  }
