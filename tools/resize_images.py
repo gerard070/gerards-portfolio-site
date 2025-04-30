@@ -3,8 +3,8 @@ import os
 
 print("🚀 Script started")
 # === Configuration ===
-input_folder = 'images'         # Adjust this if your images are elsewhere
-output_folder = 'resized'       # Will be created inside your site directory
+input_folder = '../images'         # Adjust this if your images are elsewhere
+output_folder = '../resized'       # Will be created inside your site directory
 target_size = (1200, 900)       # Width x Height, 4:3 aspect ratio
 
 # === Ensure output folder exists ===
