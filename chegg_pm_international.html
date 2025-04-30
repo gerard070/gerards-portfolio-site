@@ -37,18 +37,84 @@
       </div>
       <div class="section-spacing">
         <h3>Results</h3>
-        <p>⚡ Achieved double-digit growth in new international subscriber segments within the first year of rollout.</p>
+        <p>Achieved double-digit growth in new international subscriber segments within the first year of rollout.</p>
       </div>
       <!-- <div class="section-spacing"> -->
-        <h3>Deep Dive: Local Currency Presentment</h3>
-        <p>At Chegg, I led an initiative to improve international conversion by making our offering more relevant and accessible in key markets. We focused on deeply understanding local user needs and removing barriers to purchase. This work became critical as ChatGPT rapidly undercut our product-market fit and we needed to prove continued growth to Wall Street.</p>
-        <p>Through a program of continuous discovery that I had instituted with my designer and eng lead, we already had a pretty good idea of the international opportunity space. Customer journey mapping and funnel analysis revealed we had significant drop-off on our pricing and packaging page for international users. Improving passthrough rate on this page would drive CVR downstream.</p>
+        <h2 class="deep-dive-section">Deep Dive: Local Currency Presentment (LCP)</h2>
+        <hr class="section-divider" />
+        <div class="star-block">
+          <h3>Situation</h3>
+          <p>At Chegg, I led an initiative to grow international conversion by making our offering more relevant and accessible in key markets. Our north star OKR focused on increasing international subscriber counts and reducing checkout abandonment. We grounded our work in user research to understand local needs and remove barriers to purchase. Speed was critical, as we needed to deliver impact quickly to demonstrate growth to Wall Street amid rapidly declining product-market fit due to ChatGPT.</p>
+          <p>Working closely with my designer and engineering lead, I had already established a continuous discovery practice to explore the international opportunity space. Customer journey mapping and funnel analysis revealed significant drop-off on our Pricing & Packaging page among international users, indicating a disconnect in how we presented value. We identified improving passthrough rate from this page as a key lever to lift overall conversion.</p>
+        </div>
         <figure class="image-container">
           <img src="resized/Chegg_LCP_opportunities.png" style="display: block; margin: 0 auto;" />
-          <figcaption style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">Opportunity Solution Mapping revealed friction in international onboarding and purchase flows.</figcaption>
+          <!-- <figcaption style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">Opportunity Solution Mapping revealed friction in international onboarding and purchase flows.</figcaption> -->
         </figure>
-        <p>Through customer interviews and session replay analysis we knew that a big reason that international users were dropping off here was because the page was not contextually relevant to them. The pricing was in USD, the product was priced for US purchasing power, and the value props were geared towards US customers. I recall watching user after user double click our pricing, ostensibly to go to google to convert pricing in one usability test.</p>
+        <div class="star-block">
+          <h3>Task</h3>
+          <p>Customer interviews, session replays, and usability tests showed that international users were dropping off because the Pricing and Packaging page felt misaligned with their needs. Prices were in USD, value props were U.S.-centric, and the product was calibrated for U.S. purchasing power. Users frequently tried to convert prices manually, highlighting a lack of clarity at a key decision point. To move quickly, I focused on low-risk, scalable improvements that could lift conversion without major backend changes. We identified three opportunities: local currency presentment (LCP), localized value props, and pricing adjustments. I prioritized LCP first for its high impact, ease of implementation, and ability to improve relevance without affecting unit economics.</p>
+          <p>To validate the approach, we rapidly prototyped LCP experiences and ran usability testing with international users, which clearly showed improved comprehension and trust. Confident in the user value, I socialized the initiative across stakeholders.</p>
+        </div>
+        <div class="star-block">
+          <h3>Action</h3>
+          <p>While the initial response to LCP was extremely positive, a clear tension emerged: the business wanted to launch in India to maximize impact, while Legal flagged regulatory risks. I brought both teams together, framed the tradeoffs, and proposed a path forward. We would run our first A/B test in Turkey, a lower-risk market, while accelerating due diligence for India in parallel. This allowed us to maintain momentum without compromising compliance.</p>
+          <p>I led a cross-functional team to ship an MVP that displayed localized pricing in Turkish Lira while continuing to transact in USD behind the scenes. This approach allowed us to move quickly, reduce engineering complexity, and avoid disruptions to billing or finance systems.</p>
+        </div>
+        <div class="star-block">
+          <h3>Result</h3>
+        <div class="two-images">
+          <figure>
+              <img src="resized/Chegg_LCP_Turkish_lira.png" alt="before" />
+            
+              <!-- <figcaption>Before the redesign, the UI had high cognitive load, failed to align with user workflows or anticipate needs, and faced usability and stability issues.</figcaption> -->
+                <figcaption>For any users who visited our site from Turkey, pricing now appeared in Turkish Lira on the PNP page</figcaption>
+          </figure>
+          <figure>
+              <img src="resized/Chegg_DCO_Turkish_Lira.png" alt="after" />
+              <!-- <figcaption>By integrating insights from reference customers and contextual inquiry, we redesigned the UI to align seamlessly with the order lifecycle, reducing decision fatigue by highlighting the most relevant orders at the right moment while also alleviating unnecessary strain on the platform.</figcaption> -->
+               <figcaption>Checkout displayed local pricing while still settling in USD to avoid disrupting billing and finance systems.</figcaption>
+          </figure>
+        </div>
+        <p>The A/B test showed a 7% lift in international conversion by improving passthrough rates, validating our hypothesis that localized pricing presentation alone could significantly improve relevance and reduce friction. This success became the foundation for Chegg’s international expansion playbook: starting with local currency presentment, layering on regulatory compliance and localized UX, and ultimately optimizing value props and price points to maximize conversion without sacrificing revenue. By scaling this model, we not only increased acquisition in new markets but also improved retention by reducing prices for existing subscribers where appropriate.</p>
+      </div>
       <!-- </div> -->
+      <h2 class="deep-dive-section">Deep Dive: Localization and Compliance</h2>
+      <hr class="section-divider" />
+      <div class="star-block">
+        <h3>Situation</h3>
+        <p>Following our launch of local currency presentment, regulators in key markets viewed it as a signal of market entry, triggering legal obligations.</p>
+      </div>
+      <div class="star-block">
+        <h3>Task</h3>
+        <p>To continue scaling internationally without regulatory risk, we needed to support tax compliance, especially around VAT collection and transparency, while protecting conversion rates.</p>
+      </div>
+      <div class="star-block">
+        <h3>Action</h3>
+        <p>I partnered with Legal and local counsel to identify country-specific requirements and led the development of flexible checkout UI components that supported VAT itemization where required, without surfacing unnecessary costs in unaffected markets. This included tailoring UX for high-regulation countries like Indonesia without introducing global complexity.</p>
+      </div>
+      <div class="star-block">
+        <h3>Result</h3>
+        <p>We launched compliant, conversion-friendly checkouts across multiple markets, unlocking the next phase of our international strategy. Our adaptable infrastructure allowed us to scale pricing and packaging experiments confidently in new regions.</p>
+      </div>
+      
+      <h2 class="deep-dive-section">Deep Dive: Price Testing</h2>
+      <hr class="section-divider" />
+      <div class="star-block">
+        <h3>Situation</h3>
+        <p>With LCP and compliant UI in place, we had the infrastructure to begin testing price sensitivity in international markets.</p>
+      </div>
+      <div class="star-block">
+        <h3>Task</h3>
+        <p>Our objective was to increase conversion in price-sensitive regions while limiting ARPU impact and avoiding additional operational complexity.</p>
+      </div>
+      <div class="star-block">
+        <h3>Action</h3>
+        <p>I partnered with Finance to identify market-specific price anchors using benchmarks like the Big Mac Index. We then ran A/B tests on base and bundle packages to find price points that maximized conversion while maintaining revenue viability. Once validated, I led the rollout of new pricing across each market, including lowering prices for existing subscribers—an intentional move to reduce churn and improve perceived value. To prevent abuse from VPN users attempting to access lower prices, I also worked with Engineering to implement IP-based VPN detection and default those users to U.S. pricing.</p>
+      </div>
+      <div class="star-block">
+        <h3>Result</h3>
+        <p>In some markets, we increased conversion rates by up to 57%. While this required price reductions of up to 50%, we offset the impact on revenue by expanding volume and improving retention among existing subscribers. This approach became a repeatable growth lever in our international expansion strategy, allowing us to scale sustainably while adapting to local market dynamics.</p>
       </div>
     </section>
   </div>
@@ -65,3 +131,5 @@
       }
     });
   </script>
+  </body>
+  </html>
