@@ -8797,3 +8797,8 @@ input, select, textarea {
   .star-block {
 	margin-bottom: 3rem;
   }
+  
+  .icon.brands.fa-github {
+	font-size: 1.6em;
+	color: #000; /* Optional: darken for more contrast */
+  }

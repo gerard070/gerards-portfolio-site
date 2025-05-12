@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chegg Commerce Platform Expansion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="is-preload">
+  <div id="password-protect" class="wrapper style1 align-center">
+    <div class="inner">
+      <h1>Commerce Platform Expansion at Chegg</h1>
+      <p>This page is password protected. Please enter the password or contact me at gerardinterviews@gmail.com to continue. </p>
+      <form id="passwordForm">
+        <input type="password" id="passwordInput" placeholder="Enter password" required />
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="error-message" style="color: red; display: none;">Incorrect password. Please try again.</p>
+    </div>
+  </div>
+  
+  <!-- MOVE protected content OUTSIDE -->
+  <div id="protected-content" style="display: none;">
+    <section class="wrapper style2 align-center">
+      <!-- <div class="inner">
+        <h2>Chegg International Expansion Strategy</h2>
+        <p>To expand Chegg’s SaaS offering into international markets, I took a balanced approach that prioritized growth while managing operational complexity and addressing localized user needs.</p>
+        <div class="section-spacing">
+        <h3>Key Highlights</h3>
+        <ul style="text-align: left; max-width: 1000px; margin: 0 auto; list-style: none; padding-left: 0;">
+          <li>⭐ Prioritized market entry based on TAM, competitive dynamics, and LTV projections</li>
+          <li>⭐ Rolled out local currency presentment (LCP) and optimized regional pricing</li>
+          <li>⭐ Streamlined product localization with scalable tech architecture</li>
+          <li>⭐ Balanced regional customization with core platform consistency to maximize margin</li>
+        </ul>
+      </div>
+      <div class="section-spacing">
+        <h3>Results</h3>
+        <p>Achieved double-digit growth in new international subscriber segments within the first year of rollout.</p>
+      </div>
+      <div class="section-spacing"> -->
+        <h2 class="deep-dive-section">Deep Dive: Federation of Services</h2>
+        <hr class="section-divider" />
+        <div class="star-block">
+          <h3>Situation</h3>
+          <p>When I took over the lower funnel at Chegg, I inherited a two-year backlog and a team that was overwhelmed. We owned the core monetization surfaces — pricing, packaging, and checkout — and were the single-threaded owners of revenue-driving infrastructure. But we were also stretched too thin: engineers were on-call for funnel outages, delivering our own features, and simultaneously supporting monetization initiatives across the company.</p>
+          <p>A key tech initiative — migrating to a federated front-end architecture — had been deprioritized repeatedly. The team had been without a PM for six months, so anything with immediate revenue impact kept getting prioritized instead. When I joined, I asked my EM how I could empower the team to succeed. Together with our project manager, we audited the backlog and found that nearly 40% of it was made up of requests from blocked teams who needed our surfaces to run experiments.</p>
+        </div>
+        <figure class="image-container">
+          <img src="resized/chegg_intersitial_components.png" style="display: block; margin: 0 auto;" />
+          <!-- <figcaption style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">Opportunity Solution Mapping revealed friction in international onboarding and purchase flows.</figcaption> -->
+        </figure>
+        <div class="star-block">
+          <h3>Task</h3>
+          <p>I needed to reduce our delivery timelines and eliminate our team as a bottleneck — not only to accelerate our own roadmap, but to unblock the 40% of work tied to dependent teams. This meant reviving and executing the federation initiative and securing buy-in for a temporary tradeoff: deprioritizing some near-term delivery in exchange for long-term scale and velocity.</p>
+          
+        </div>
+        <div class="star-block">
+          <h3>Action</h3>
+          <p>I proposed dedicating 30% of our engineering capacity over a quarter to complete the federation migration. I worked with engineering to outline the migration plan and dependencies, then partnered with business stakeholders to frame the upside: removing 40% of our backlog, enabling org-wide experimentation, and avoiding missed delivery dates on our own roadmap. The quantification was directional — not perfect — but compelling enough to get leadership on board.</p>
+          <p>As part of this initiative, we federated our front-end by migrating lower funnel components to a shared React library, enabling teams to embed pricing and checkout flows autonomously. We also modularized our pricing API to simplify integration and ensure compatibility across consuming teams, though the API itself remained centrally managed.</p>
+          <p>While engineering executed, I familiarized myself with our architecture, implemented support mechanisms, and used the opportunity to review our remaining backlog items through a tract of continuous discovery. My EM and I committed to running weekly office hours for 6 months post-migration, where we supported teams like marketing and product experience with questions around usage and documentation. This hardened our internal systems, reduced repeat questions, and freed our tech leads up for higher-leverage work during planning cycles.</p>
+        </div>
+        <div class="star-block">
+          <h3>Result</h3>
+        <div class="two-images">
+          <figure>
+              <img src="resized/chegg_intersitial_components.png" alt="before" />
+            
+              <!-- <figcaption>Before the redesign, the UI had high cognitive load, failed to align with user workflows or anticipate needs, and faced usability and stability issues.</figcaption> -->
+                <figcaption>Prior to federating our front-end components, teams were dependent on us to implement and integrate those components into their own experiences.</figcaption>
+          </figure>
+          <figure>
+              <img src="resized/chegg_interstitial_components_post_federation.png" alt="after" />
+              <!-- <figcaption>By integrating insights from reference customers and contextual inquiry, we redesigned the UI to align seamlessly with the order lifecycle, reducing decision fatigue by highlighting the most relevant orders at the right moment while also alleviating unnecessary strain on the platform.</figcaption> -->
+               <figcaption>After federating our front-end architecture, teams could integrate our components independently, without relying on our team as a bottleneck.</figcaption>
+          </figure>
+        </div>
+        <ul style="text-align: left; max-width: 1000px; margin: 0 auto 3rem auto; list-style: none; padding-left: 0;">
+            <li>⭐ We eliminated 40% of our backlog, entirely comprised of dependency tickets.</li>
+            <li>⭐ Our team’s velocity doubled within two quarters, and we hit key roadmap milestones that had previously been at risk.</li>
+            <li>⭐ We supported 12+ teams post-migration through documentation and live support, reducing friction and increasing platform adoption.</li>
+            <li>⭐ A formerly blocked team embedded our checkout component in their flow and saw a 7–9% CVR lift — a material gain in a highly saturated U.S. market.</li>
+          </ul>
+          <p>This initiative transformed us from a dependency-heavy execution team into a true platform owner, in line with the Working Backwards principle of separating platform and application teams. We unlocked autonomy across the org, improved our delivery consistency, and positioned our engineers to focus on infrastructure innovation instead of operational triage.</p>
+      </div>
+
+
+    </section>
+  </div>
+  <script>
+    document.getElementById("passwordForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const password = document.getElementById("passwordInput").value;
+      // if (password === "AccessGranted2025") {
+        if (password === "t") {
+        document.getElementById("password-protect").style.display = "none";
+        document.getElementById("protected-content").style.display = "block";
+      } else {
+        document.getElementById("error-message").style.display = "block";
+      }
+    });
+  </script>
+  </body>
+  </html>
