@@ -89,17 +89,11 @@
 
     </section>
   </div>
+  <script src="assets/js/password-protection.js"></script>
   <script>
-    document.getElementById("passwordForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      const password = document.getElementById("passwordInput").value;
-      // if (password === "AccessGranted2025") {
-        if (password === "t") {
-        document.getElementById("password-protect").style.display = "none";
-        document.getElementById("protected-content").style.display = "block";
-      } else {
-        document.getElementById("error-message").style.display = "block";
-      }
+    // Initialize password protection when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initPasswordProtection();
     });
   </script>
   </body>
