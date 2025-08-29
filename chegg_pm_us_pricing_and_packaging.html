@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Pricing and Packaging Initatives</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/lightbox.css?v=11">
 </head>
 <body class="is-preload">
   <div id="password-protect" class="wrapper style1 align-center">
@@ -28,10 +29,16 @@
   </div>
 
   <script src="assets/js/password-protection.js"></script>
+  		<script src="assets/js/lightbox.js?v=9"></script>
   <script>
     // Initialize password protection when page loads
     document.addEventListener('DOMContentLoaded', function() {
       initPasswordProtection();
+      
+      // Initialize lightbox after password protection
+      if (window.initPortfolioLightbox) {
+        window.initPortfolioLightbox();
+      }
     });
   </script>
 </body>

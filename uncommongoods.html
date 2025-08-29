@@ -9,6 +9,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lightbox.css?v=11" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		  <!-- Google Analytics Tracking Script -->
 		  <script src="assets/js/tracking.js"></script>
@@ -71,6 +72,15 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/lightbox.js?v=9"></script>
+		<script>
+			// Initialize lightbox when page loads
+			document.addEventListener('DOMContentLoaded', function() {
+				if (window.initPortfolioLightbox) {
+					window.initPortfolioLightbox();
+				}
+			});
+		</script>
 
 	</body>
 </html>
